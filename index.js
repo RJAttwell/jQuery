@@ -20,3 +20,14 @@ $("h1").addClass("bigTitle margin50");
 
 //Can query if an element possesses a class:
 $("h1").hasClass("bigTitle"); //Will return a boolean 
+
+//MANIPULATING TEXT WITH JQUERY
+$("h1").text("Bye"); //Changes text of an HTML element
+
+$("button").text("Don't click me"); //Changes text of every HTML element that matches the criteria (Elements called "button")
+
+$("button").html("<em>Hey</em>") //.html changes the html instead of just the text
+
+//Most things done via jQuery as done using methods, preferencing it with the dot notation
+
+//MANIPULATING ATTRIBUTES WITH JQUERY

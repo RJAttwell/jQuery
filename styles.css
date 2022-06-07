@@ -1,3 +1,13 @@
 body{
     background-color: aqua;
 }
+
+.bigTitle{
+    color: yellow;
+    font-size: 10rem;
+    font-family: cursive;
+}
+
+.margin50{
+    margin: 50px;
+}

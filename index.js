@@ -31,3 +31,12 @@ $("button").html("<em>Hey</em>") //.html changes the html instead of just the te
 //Most things done via jQuery as done using methods, preferencing it with the dot notation
 
 //MANIPULATING ATTRIBUTES WITH JQUERY
+//Use the .attr dot notation 
+$("img").attr("src");
+
+//Set attribute of an anchor tag
+$("a").attr("href", "https://www.yahoo.com")
+
+//Will print out all the classes set to an element
+$("h1").attr("class");
+

@@ -40,3 +40,8 @@ $("a").attr("href", "https://www.yahoo.com")
 //Will print out all the classes set to an element
 $("h1").attr("class");
 
+//ADDING EVENT LISTENERS WITH JQUERY
+$("h1").click(function(){           //click adds an event listener and calls the callback function once it registers a click
+    $("h1").css("color", "purple")
+});
+

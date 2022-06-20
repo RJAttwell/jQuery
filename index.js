@@ -35,7 +35,7 @@ $("button").html("<em>Hey</em>") //.html changes the html instead of just the te
 $("img").attr("src");
 
 //Set attribute of an anchor tag
-$("a").attr("href", "https://www.yahoo.com")
+$("a").attr("href", "https://www.yahoo.com");
 
 //Will print out all the classes set to an element
 $("h1").attr("class");
@@ -45,3 +45,38 @@ $("h1").click(function(){           //click adds an event listener and calls the
     $("h1").css("color", "purple")
 });
 
+//Don't need to bother with a for loop as jQuery will look through the website and select all elements with the tag you set
+
+//Will log what key is pressed when typing inside the input box
+$("input").keypress(function(event){
+    console.log(event.key)
+});
+
+//Challenge 1:
+//Changes h1 text to whatever is pressed on the keyboard
+$(document).keypress(function(){
+    $("h1").text(event.key)
+});
+
+//Change colour of text by hovering over it with mouse:
+$("h1").on("mouseover", function(){
+    $("h1").css("color", "green")
+});
+
+//Can check Event reference page on MDN docs for other actions
+
+//ADDING/REMOVING ELEMENTS USING JQUERY
+//Lets say we want to add a button before the h1
+$("h1").before("<button>New</button>");
+//Allows us to create new HTML elements at anytime via jQuery
+
+$("h1").after("<button>New</button>");
+
+//There is also prepend and append which will add an element inside the h1 tag (or whatever other element you put) compared to before/after that adds it outside the h1 tag
+
+//Example:
+//Before = <button>New</button> <h1>Hello</h1>
+//Prepend = <h1><button>New</button>Hello</h1>
+
+//Will remove all buttons inside the current webpage
+$("button").remove() 
